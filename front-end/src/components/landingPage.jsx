@@ -1,9 +1,21 @@
 import React, { Component } from "react";
+import { Hero, Navbar } from "@front10/landing-page-book/dist/components";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "@front10/landing-page-book/dist/themes/default/index.css";
+import Maps from "./aboutMe/maps"
+
+
 import { Grid, Cell } from "react-mdl";
 
 class LandingPage extends Component {
   render() {
     return (
+      <Hero
+          opacity={1}
+          overlayColor="#373D45"
+          particlesSugar="crazyStars"
+          height="100%"
+        >
       <div style={{ width: "100%", height: "100%", margin: "auto", overflow: "auto"}}>
         <Grid className="landing-grid">
           <Cell col={12}>
@@ -19,7 +31,7 @@ class LandingPage extends Component {
               <hr />
               <p className='tracking-in-expand'>
                 HTML/CSS | Bootstrap | JavaScript | React | Redux | NodeJS |
-                Express | MongoDB
+                Express | MongoDB | Heroku | Docker | Google Cloud Platform | Kubernetes 
               </p>
 
               <div className="social-links fade-in">
@@ -51,7 +63,14 @@ class LandingPage extends Component {
             </div>
           </Cell>
         </Grid>
+        <Grid className="location">
+          {/* <Cell className="locationTab col={4}">
+            <Maps />
+          </Cell> */}
+        </Grid>
+
       </div>
+        </Hero>
     );
   }
 }
