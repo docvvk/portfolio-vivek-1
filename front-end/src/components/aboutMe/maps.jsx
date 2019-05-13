@@ -7,7 +7,7 @@ class Maps extends Component {
   render() {
     return (
       <Location
-        apiKey="AIzaSyBdhEZBl6PFx3L7POHBQRd2leJZkUNfAIc"
+        apiKey="API_KEY"
         lat={26.5}
         lng={-80.2}
         zoom={10}
