@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import axios from "axios";
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import "@front10/landing-page-book/dist/themes/default/index.css";
 
 class QuickMessage extends Component {
   handleSubmit(e) {
@@ -33,11 +31,6 @@ class QuickMessage extends Component {
 
   render() {
     return (
-      //   <ContactUs
-      //     showText
-      //     showPlaceholder
-      //     apiUrl="https://maker.ifttt.com/trigger/front10_contactform/with/key/dFOibtTrDh8pCZ9laeYno"
-      //   />
       <div className="contactUs">
         <form
           id="contact-form"
