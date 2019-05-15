@@ -25,19 +25,18 @@ class AboutMe extends Component {
           particlesSugar="crazyStars"
           height="100%"
         >
-        <div style={ { width:"80%", margin: "auto" } }>
-        <h2>I can see you here !!</h2>
-        <Grid className="location">
+        <div style={ { width:"80%", margin: "4rem auto", height: "20rem" } }>
+        <Grid className="aboutMe-components">
           <Cell className="locationTab col={4} text-center">
-            <h3 className="tabHeading">I'M here</h3>
+            <h3 className="tabHeading">YOU CAN SEE ME HERE</h3>
             <Maps />
           </Cell>
-          <Cell className="locationTab col={4} text-center">
-            <h3 className="tabHeading">Contact Info</h3>
+          <Cell className="contact-info locationTab col={4}">
+            <h3 className="tabHeading">CONTACT INFORMATION</h3>
             <Contact />
           </Cell>
           <Cell className="locationTab col={4} text-center">
-            {/* <h3 className="tabHeading">How about a mess gae</h3> */}
+            <h3 className="tabHeading">SEND A QUICK MESSAGE</h3>
             <QuickMessage />
           </Cell>
         </Grid>

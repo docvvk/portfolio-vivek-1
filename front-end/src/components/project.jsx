@@ -12,19 +12,20 @@ import {
   CardActions,
   Icon,
   IconButton,
-  Checkbox
 } from "react-mdl";
 
 class App extends Component {
   render() {
-    let { modaltitle, modaltext } = this.props;
+    let { modaltitle, modaltext, modalheader } = this.props;
 
     return (
       <Modal
         {...this.props}
         size="lg"
+        dialogClassName="modal-90w"
         aria-labelledby="contained-modal-title-vcenter"
         centered
+        scrollable
         style={{ background: "rgb(0,0,0,0.6)" }}
       >
         <Modal.Header
@@ -32,22 +33,17 @@ class App extends Component {
           closeButton
         >
           <Modal.Title id="contained-modal-title-vcenter">
-            {modaltitle}
+            <h3>{modaltitle}</h3>
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body as="list">
           <Grid>
-            <Cell col={6}>
-              <h3>Project Information</h3>
+            <Cell col={12}>
+              <h4>PROJECT INFORMATION</h4>
               <p>{modaltext}</p>
-            </Cell>
-            <Cell col={6}>
-              <h3>Technologies</h3>
-              <Checkbox label="HTML5" ripple defaultChecked />
-              <Checkbox label="CSS3" ripple defaultChecked />
-              <Checkbox label="JavaScript" ripple defaultChecked />
-              <Checkbox label="jQuery" ripple defaultChecked />
-            </Cell>
+              <hr />
+              <h5>{modalheader}</h5>
+              </Cell>
           </Grid>
         </Modal.Body>
         <Modal.Footer>
@@ -176,23 +172,23 @@ class Project extends Component {
         shadow={5}
         style={{
           position: "relative",
-          width: "15rem",
-          height: "15rem",
+          width: "35rem",
+          height: "28rem",
           display: "inline-block",
           background: `url(${cardBackgroundURL}) center / cover`,
-          margin: "auto",
+          margin: "2rem 0 2rem 0",
           overflow: "hidden"
         }}
       >
         <CardTitle expand />
         <CardActions
-          style={{
-            height: "52px",
-            padding: "16px",
-            background: "rgba(0,0,0,0.2)",
-            fontFamily: "Anton",
-            textAlign: "center"
-          }}
+          // style={{
+          //   height: "52px",
+          //   padding: "16px",
+          //   background: "rgba(0,0,0,0.2)",
+          //   fontFamily: "Anton",
+          //   textAlign: "center"
+          // }}
         >
           <a href={githubURL} target="_blank" rel="noopener noreferrer">
             <OverlayTrigger
@@ -200,7 +196,6 @@ class Project extends Component {
               placement="top"
               overlay={githubTooltip}
             >
-              {/* <Tooltip label="Review my code!" position="top" large> */}
               <i
                 style={{
                   fontSize: "2rem",

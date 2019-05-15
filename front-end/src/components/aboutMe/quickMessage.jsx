@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import axios from "axios";
-// import { ContactUs } from "@front10/landing-page-book/dist/components";
 // import "bootstrap/dist/css/bootstrap.min.css";
 // import "@front10/landing-page-book/dist/themes/default/index.css";
 
@@ -39,8 +38,7 @@ class QuickMessage extends Component {
       //     showPlaceholder
       //     apiUrl="https://maker.ifttt.com/trigger/front10_contactform/with/key/dFOibtTrDh8pCZ9laeYno"
       //   />
-      <div>
-        <h3>CONTACT ME</h3>
+      <div className="contactUs">
         <form
           id="contact-form"
           onSubmit={this.handleSubmit.bind(this)}
@@ -61,12 +59,15 @@ class QuickMessage extends Component {
           </div>
           <div className="form-group">
             <label htmlFor="message">Message</label>
-            <textarea id="message" name="message" rows="5" />
+            {/* <textarea id="message" name="message" rows="5" /> */}
+            <textarea className="form-control" rows="5" id="message"></textarea>
+
             {/* <input type="text" className="form-control" size="5" id="message"></input> */}
           </div>
-          <button type="submit" className="btn btn-primary">
-            Submit
-          </button>
+          
+          <input type="submit" />
+           
+          
         </form>
       </div>
     );

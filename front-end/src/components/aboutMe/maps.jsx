@@ -1,16 +1,20 @@
 import React, { Component } from "react";
+// import config from '../../'
 import { Location } from "@front10/landing-page-book/dist/components";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@front10/landing-page-book/dist/themes/default/index.css";
+
+const apiKey = process.env.REACT_APP_API_KEY
 
 class Maps extends Component {
   render() {
     return (
       <Location
-        apiKey="AIzaSyBdhEZBl6PFx3L7POHBQRd2leJZkUNfAIc"
-        lat={26.5}
-        lng={-80.2}
-        zoom={10}
+      mapHeight={'100%'}
+        apiKey={apiKey}
+        lat={43.884}
+        lng={-78.9}
+        zoom={8}
         markers={[
           {
             icon: "fa fa-map-marker",

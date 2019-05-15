@@ -3,7 +3,7 @@ import Slider from "react-slick";
 
 import Project from "../project";
 
-class WebProjects extends Component {
+class MernProjects extends Component {
   render() {
     const settings = {
       infinite: true,
@@ -34,28 +34,27 @@ class WebProjects extends Component {
       // <div className="projects-grid">
       <div>
         <Slider {...settings}>
-          <Project
-            modaltitle={"MALTON COMMUNITY TOASTMASTERS WEBSITE"}
-            modalheader={'Website Administrator for Malton Community Toastmasters Club !'}
+        <Project
+            modaltitle={"MERN NEWS SCRAPPER"}
+            modalheader={"MongoDB - NodeJS - Express - ReactJS - Heroku - MVC"}
             modaltext={
-              "TECHNOLOGIES USED -- FreeToastHost 3 and its inbuilt functions for custom CSS and editing.FreeToastHost is a web-host specifically for Toastmasters clubs and districts anywhere in the world. Each website comes with easy-to-use web-based software ideal for any Toastmasters club. Providing your club is listed on Toastmasters.org, there is no-cost for this service! FreeToastHost was created by a Toastmaster, and is maintained and supported by a group of Toastmasters, with the cooperation of Toastmasters International. FreeToastHost websites use the domain names ToastmastersClubs.org and ToastmastersDistricts.org for the club and district websites, respectively."
+              "FUNCTIONALITY -- A single page MERN STACK application that searches for articles from the New York Times API. Searched articles can be saved as well as deleted. The app uses Node/Express for the server and routing, and mongoDB to save and retrieve articles from the database."
             }
             cardBackgroundURL={
-              "https://images.unsplash.com/photo-1528605105345-5344ea20e269?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+              "https://images.unsplash.com/photo-1498286668407-428a063f9aff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2071&q=80"
             }
-            githubURL={"https://github.com/docvvk/liri-node-app"}
-            demoURL={"https://mctc.toastmastersclubs.org/"}
-            // teckList={['HTML5','CSS3','JAVASCRIPT','jQuery']}
+            githubURL={"https://github.com/docvvk/react-newsapp"}
+            demoURL={"https://react-newsscrap.herokuapp.com/"}
           />
 
-          <Project
+<Project
             modaltitle={"COMING SOON..."}
             modalheader={"LATEST WEB TECHNOLOGIES"}
             modaltext={
               "Working on building more meaningful projects and learning new web technologies."
             }
             cardBackgroundURL={
-              "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652&q=80"
+              "https://images.pexels.com/photos/1509428/pexels-photo-1509428.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
             }
             // githubURL={"https://github.com/docvvk/WordGuess-Cli"}
             // demoURL={"https://github.com/docvvk/WordGuess-Cli"}
@@ -68,7 +67,7 @@ class WebProjects extends Component {
               "Working on building more meaningful projects and learning new web technologies."
             }
             cardBackgroundURL={
-              "https://images.unsplash.com/photo-1467444606224-8254b013a046?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1649&q=80"
+              "https://images.pexels.com/photos/39349/teens-robot-future-science-39349.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
             }
             // githubURL={"https://github.com/docvvk/WordGuess-Cli"}
             // demoURL={"https://github.com/docvvk/WordGuess-Cli"}
@@ -79,4 +78,4 @@ class WebProjects extends Component {
   }
 }
 
-export default WebProjects;
+export default MernProjects;

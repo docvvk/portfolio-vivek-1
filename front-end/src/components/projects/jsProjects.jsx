@@ -64,7 +64,7 @@ class JSProjects extends Component {
             }
             githubURL={"https://github.com/docvvk/TriviaGame"}
             demoURL={"https://docvvk.github.io/TriviaGame/"}
-            // teckList={['HTML5','CSS3','JAVASCRIPT','jQuery']}
+            techList={['HTML5','CSS3','JAVASCRIPT','jQuery']}
           />
 
           <Project
