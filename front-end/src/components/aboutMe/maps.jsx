@@ -10,9 +10,9 @@ class Maps extends Component {
     return (
       <Location
         apiKey={apiKey}
-        lat={26.5}
-        lng={-80.2}
-        zoom={10}
+        lat={43.884}
+        lng={-78.9}
+        zoom={8}
         markers={[
           {
             icon: "fa fa-map-marker",

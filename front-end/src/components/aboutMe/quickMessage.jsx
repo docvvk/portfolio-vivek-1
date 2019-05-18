@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import { Button } from "semantic-ui-react";
 
 class QuickMessage extends Component {
   handleSubmit(e) {
@@ -38,11 +39,11 @@ class QuickMessage extends Component {
           method="POST"
         >
           <div className="form-group">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name">NAME</label>
             <input type="text" className="form-control" id="name" />
           </div>
           <div className="form-group">
-            <label htmlFor="exampleInputEmail1">Email address</label>
+            <label htmlFor="exampleInputEmail1">EMAIL ADDRESS</label>
             <input
               type="email"
               className="form-control"
@@ -51,14 +52,14 @@ class QuickMessage extends Component {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">MESSAGE</label>
             {/* <textarea id="message" name="message" rows="5" /> */}
             <textarea className="form-control" rows="5" id="message"></textarea>
 
             {/* <input type="text" className="form-control" size="5" id="message"></input> */}
           </div>
           
-          <input type="submit" />
+          <Button type="submit">SUBMIT</Button>
            
           
         </form>

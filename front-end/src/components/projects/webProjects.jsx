@@ -49,29 +49,29 @@ class WebProjects extends Component {
           />
 
           <Project
-            modaltitle={"COMING SOON..."}
-            modalheader={"LATEST WEB TECHNOLOGIES"}
+            modaltitle={"RESPONSIVE PORTFOLIO WEBSITE"}
+            modalheader={"HTML5 - CSS3 - MEDIA QUERIES"}
             modaltext={
-              "Working on building more meaningful projects and learning new web technologies."
+              "Fully Responsive Portfolio Website created using only HTML and CSS without any external library."
             }
             cardBackgroundURL={
-              "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652&q=80"
+              "https://images.unsplash.com/photo-1533630160910-65f5a1718c65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
             }
-            // githubURL={"https://github.com/docvvk/WordGuess-Cli"}
-            // demoURL={"https://github.com/docvvk/WordGuess-Cli"}
+            githubURL={"https://github.com/docvvk/Responsive-Portfolio"}
+            demoURL={"https://docvvk.github.io/Responsive-Portfolio/"}
           />
 
           <Project
-            modaltitle={"COMING SOON..."}
-            modalheader={"LATEST WEB TECHNOLOGIES"}
+            modaltitle={"BOOTSTRAP PORTFOLIO WEBSITE"}
+            modalheader={"HTML5 - CSS3 - BOOTSTRAP - MEDIA QUIRIES"}
             modaltext={
-              "Working on building more meaningful projects and learning new web technologies."
+              "Fully Responsive Portfolio Website created using Bootstrap, HTML and CSS."
             }
             cardBackgroundURL={
               "https://images.unsplash.com/photo-1467444606224-8254b013a046?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1649&q=80"
             }
-            // githubURL={"https://github.com/docvvk/WordGuess-Cli"}
-            // demoURL={"https://github.com/docvvk/WordGuess-Cli"}
+            githubURL={"https://github.com/docvvk/BootstrapPortfolio"}
+            demoURL={"https://docvvk.github.io/BootstrapPortfolio/"}
           />
         </Slider>
       </div>

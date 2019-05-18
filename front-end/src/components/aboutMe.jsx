@@ -27,16 +27,16 @@ class AboutMe extends Component {
         >
         <div style={ { width:"80%", margin: "4rem auto", height: "20rem" } }>
         <Grid className="aboutMe-components">
-          <Cell className="locationTab col={4} text-center">
-            <h3 className="tabHeading">YOU CAN SEE ME HERE</h3>
+          <Cell className="locationTab col={4} text-center typewriter">
+            <h4 className="tabHeading typewriter-text">YOU CAN SEE ME HERE</h4>
             <Maps />
           </Cell>
           <Cell className="contact-info locationTab col={4}">
-            <h3 className="tabHeading">CONTACT INFORMATION</h3>
+            <h4 className="tabHeading typewriter-text">CONTACT INFORMATION</h4>
             <Contact />
           </Cell>
           <Cell className="locationTab col={4} text-center">
-            <h3 className="tabHeading">SEND A QUICK MESSAGE</h3>
+            <h4 className="tabHeading typewriter-text">SEND A QUICK MESSAGE</h4>
             <QuickMessage />
           </Cell>
         </Grid>

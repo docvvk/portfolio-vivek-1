@@ -36,16 +36,8 @@ class LandingPage extends Component {
                 </h1>
               </div>
             </Cell>
-
-            {/* <p className="tracking-in-expand">
-                  HTML/CSS | Bootstrap | JavaScript | React | Redux | NodeJS |
-                  Express | MongoDB | Heroku | Docker | Google Cloud Platform |
-                  Kubernetes
-                </p> */}
-                <Cell col={1} className="animated bounce delay-1s" style={{ backgroundColor: "yellow" }} />
-
+            <Cell col={1} />
             <Cell col={10} className="social-links fade-in">
-                
               <svg width="54px" height="54px" viewBox="0 0 128 128">
                 <path
                   fill="#E44D26"
@@ -99,7 +91,7 @@ class LandingPage extends Component {
                 />
               </svg>
 
-              <svg  width="54px" height="54px" viewBox="0 0 128 128">
+              <svg width="54px" height="54px" viewBox="0 0 128 128">
                 <path
                   fill="#F0DB4F"
                   d="M1.408 1.408h125.184v125.185h-125.184z"
@@ -483,9 +475,41 @@ class LandingPage extends Component {
                     <i className=" fa fa-free-code-camp" aria-hidden="true" />
                   </a> */}
             </Cell>
-            {/* </div> */}
-
             <Cell col={1} />
+          </Grid>
+          <Grid>
+          <Cell col={1} />
+
+                  <Cell className="typewriter" col={10}>
+                  <Grid>
+                    <Cell col={1} />
+                    <Cell col={10} >
+                    <div className="typewriter-text">FRONT-END: REACT | NODEMAILER | GOOGLE MAPS API | FRONT10 | SEMANTIC-UI-REACT</div>
+                    </Cell>
+                    <Cell col={1} />
+                  </Grid>
+                  <Grid>
+                    <Cell col={1} />
+                    <Cell col={10} >
+                    <div className="typewriter-text">BACK-END: EXPRESS | DOCKER | DOCKER-COMPOSE</div>
+                    </Cell>
+                    <Cell col={1} />
+                  </Grid>
+                  <Grid>
+                    <Cell col={1} />
+                    <Cell col={10} >
+                    <div className="typewriter-text">DEPLOYMENT: GOOGLE KUBERNETES ENGINE | GOOGLE CLOUD PLATFORM</div>
+                    </Cell>
+                    <Cell col={1} />
+                  </Grid>
+
+                  {/* <div className="typewriter-text">THIS WEBSITE IS RUNNING ON GOOGLE CLOUD INSTANCE</div>
+                  <div className="typewriter-text">FRONT-END: REACT | NODEMAILER | GOOGLE MAPS</div>
+                  <div className="typewriter-text">BACK-END: EXPRESS </div> */}
+                  {/* <div className="typewriter-text">This Front End is created using React | Front10 | React-Bootstrap | React-MDL | React-Slick | Semantic-UI-React | NodeMailer!
+                  This Back End is created using Express. Containerization by DOCKER. Deployment by GOOGLE CLOUD KUBERNETES</div> */}
+                  </Cell>
+                  <Cell col={1} />
 
           </Grid>
         </div>

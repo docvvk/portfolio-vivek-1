@@ -50,7 +50,7 @@ class K8Projects extends Component {
 
           <Project
             modaltitle={"KUBERNETES IN GOOGLE CLOUD"}
-            modalheader={"JavaScript - NodeJS - Inquirer - Chalk - Chalk Animation"}
+            modalheader={"Qwiklabs Kubernetes in The Google CLoud"}
             modaltext={
               "HANDS-ON practice configuring Docker images and containers, and deploying fully-fledged Kubernetes Engine applications. KUBERNETES is the most popular container orchestration system and the Google Kubernetes Engine was designed specifically to support managed Kubernetes deployments in the Google Cloud."
             }
