@@ -10,6 +10,21 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "@front10/landing-page-book/dist/themes/default/index.css";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { apiResponse: "" }
+  }
+
+  callAPI() {
+    fetch("http://localhost:9000/testApi")
+    .then(res => res.text())
+    .then(res => this.setState({ apiResponse: res }))
+    .catch(err => err);
+  }
+  componentDidMount() {
+    this.callAPI();
+  }
+
   render() {
     return (
       <div className="demo-big-content">
@@ -57,9 +72,10 @@ class App extends Component {
                 href: "https://docs.google.com/document/d/1LsOete1Seu7PTeXHAa-v_JaMqUUkt_RtSEMY8CDlys4/edit?usp=sharing",
                 target: "_blank",
                 icon: "fa fa-file"
-                // style: 'fontSize: 2em'
               },
-
+              {
+                title: `${this.state.apiResponse}`
+              }
             ]}
           >
             {/* <Container>

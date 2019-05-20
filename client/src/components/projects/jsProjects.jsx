@@ -6,21 +6,11 @@ import Project from "../project";
 class JSProjects extends Component {
   render() {
     const settings = {
-      // className: "center",
-      // centerMode: true,
       infinite: true,
       dots: true,
-      // dotsClass: "slick-dots",
-      // arrows: true,
-      // centerPadding: "2rem",
-
       slidesToShow: 3,
       slidesToScroll: 1,
-
-      // autoplay: true,
       speed: 500,
-      // autoplaySpeed: 1000,
-      // cssEase: "linear",
       appendDots: dots => (
         <ul style={{ margin: "-2rem", borderRadius: "20px", padding: "10px" }}>
           {" "}
@@ -38,15 +28,6 @@ class JSProjects extends Component {
           P{i + 1}
         </div>
       )
-      // pauseOnHover: true,
-
-      // customPaging: function() {
-      //   return (
-      //     <a href >
-      //       <img src={'cardBackgroundURL'} alt='project pic' />
-      //     </a>
-      //   );
-      // },
     };
 
     return (

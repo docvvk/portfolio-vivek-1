@@ -1,0 +1,22 @@
+version: "3"
+services:
+    client:
+        container_name: client
+        image: client-image
+        # restart: always
+        build: ./client
+        command: serve -s build
+        environment: 
+            NODE_ENV: ${NODE_ENV}
+        ports:
+            - ${REACT_APP_PORT}:${REACT_APP_PORT}
+    api:
+        container_name: api
+        image: api-image
+        build: ./api
+        command: serve -s build
+        environment:
+          APP_SERVER_PORT: ${APP_SERVER_PORT}
+          NODE_ENV: ${NODE_ENV}
+        ports:
+          - ${APP_SERVER_PORT}:${APP_SERVER_PORT}

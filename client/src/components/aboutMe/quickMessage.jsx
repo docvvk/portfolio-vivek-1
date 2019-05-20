@@ -10,11 +10,11 @@ class QuickMessage extends Component {
     const message = document.getElementById("message").value;
     axios({
       method: "POST",
-      url: "http://localhost:3002/send",
+      url: "http://localhost:9000/send",
       data: {
         name: name,
         email: email,
-        messsage: message
+        message: message
       }
     }).then(response => {
       if (response.data.msg === "success") {
@@ -53,15 +53,14 @@ class QuickMessage extends Component {
           </div>
           <div className="form-group">
             <label htmlFor="message">MESSAGE</label>
-            {/* <textarea id="message" name="message" rows="5" /> */}
-            <textarea className="form-control" rows="5" id="message"></textarea>
-
-            {/* <input type="text" className="form-control" size="5" id="message"></input> */}
+            <input
+              type="text"
+              className="form-control"
+              style={{ padding: ".3rem 0", width: "100%", height: "8rem" }}
+              id="message"
+            />
           </div>
-          
           <Button type="submit">SUBMIT</Button>
-           
-          
         </form>
       </div>
     );

@@ -27,14 +27,14 @@ transporter.verify((error, success) => {
 
 router.post("/send", (req, res, next) => {
   const output = 
-  `<p>You have a new contact request</p>
+  `<p>You have a new contact request.</p>
   <h3>Contact Details</h3>
   <ul>
     <li>Name: ${req.body.name}</li>
     <li>Email: ${req.body.email}</li>
   </ul>
   <h3>Message</h3>
-  <p>${req.body.message}</p>`;
+    <p>${req.body.message}</p>`;
 
   let mail = {
     from: '"Nodemailer Contact" <your@email.com>', // sender address
