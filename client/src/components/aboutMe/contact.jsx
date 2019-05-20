@@ -1,40 +1,3 @@
-// import React, { Component } from "react";
-// import { ContactInfo } from "@front10/landing-page-book/dist/components";
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import "@front10/landing-page-book/dist/themes/default/index.css";
-
-// class Contact extends Component {
-//   render() {
-//     return (
-//       <ContactInfo
-//         // style={'font-family: sans,helvetica,tahoma,geneva,arial,sans-serif'}
-//         address="Toronto, ON, Canada"
-//         email="code.vvk@gmail.com"
-//         mobile="+1 647 327 4455"
-//         website="www.front10.com"
-//         mapHeight={"10vh"}
-//         margin={"3"}
-//         // height={'30rem'}
-//         iconPadding={"1"}
-//         bgColor={"dark"}
-//         textColor={"success"}
-//         iconTextColor={"light"}
-//         infoMargin={"3"}
-//         // infoFontWeight={'bold'}
-//         fontSizeLg={"2"}
-//         fontSizeMd={"2"}
-//         rounded={true}
-//         showBorder={true}
-//         showIcons
-//       />
-
-      
-//     );
-//   }
-// }
-
-// export default Contact;
-
 import React from 'react';
 import { List } from 'semantic-ui-react';
 
@@ -50,8 +13,24 @@ const Contact = () => (
       content={<a href='mailto:vivek.malhan@icloud.com'>vivek.malhan@icloud.com</a>}
     />
     <List.Item
-      icon='linkify'
-      content={<a href='http://www.semantic-ui.com'>semantic-ui.com</a>}
+      icon='github'
+      content={<a href='https://github.com/docvvk' target="_blank" rel="noopener noreferrer" >GitHub</a>}
+    />
+    <List.Item
+      icon='linkedin'
+      content={<a href='https://www.linkedin.com/in/docvvk/' target="_blank" rel="noopener noreferrer">LinkedIN</a>}
+    />
+    <List.Item
+      icon='twitter'
+      content={<a href='https://twitter.com/doc_vvk' target="_blank" rel="noopener noreferrer">Twitter</a>}
+    />
+    <List.Item
+      icon='facebook'
+      content={<a href='https://facebook.com/docvvk' target="_blank" rel="noopener noreferrer">Facebook</a>}
+    />
+    <List.Item
+      icon='file'
+      content={<a href='https://docs.google.com/document/d/1LsOete1Seu7PTeXHAa-v_JaMqUUkt_RtSEMY8CDlys4/edit?usp=sharing' target="_blank" rel="noopener noreferrer">Resume</a>}
     />
   </List>
 
