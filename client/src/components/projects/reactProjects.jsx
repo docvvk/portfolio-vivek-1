@@ -38,7 +38,7 @@ class ReactProjects  extends Component {
             modaltitle={"REACT MIND GAME"}
             modalheader={'React - Fbemitter - Lodash - Heroku'}
             modaltext={
-              "TECHNOLOGIES USED -- ReactJS, Heroku | DEPENDENCIES -- classnames, fbemitter, lodash, react-dom"
+              "FUNCTIONALITY -- Test your memory skills with this Single Page React Web Game. Match similar cards and the matched cards disappear. Clear the board and You Win !!"
             }
             cardBackgroundURL={
               "https://uploads-ssl.webflow.com/5b6e27a9e5c31c6082c7e58e/5cda0b9eb7756672d6933826_ReactMindGame.png"

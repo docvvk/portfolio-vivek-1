@@ -66,7 +66,7 @@ class MongoProjects extends Component {
               "Working on building more meaningful projects and learning new web technologies."
             }
             cardBackgroundURL={
-              "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80"
+              "https://images.unsplash.com/photo-1535378917042-10a22c95931a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1631&q=80"
             }
             // githubURL={"https://github.com/docvvk/WordGuess-Cli"}
             // demoURL={"https://github.com/docvvk/WordGuess-Cli"}

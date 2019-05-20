@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { Button } from "semantic-ui-react";
+import { Button, TextArea } from "semantic-ui-react";
 
 class QuickMessage extends Component {
   handleSubmit(e) {
@@ -53,10 +53,9 @@ class QuickMessage extends Component {
           </div>
           <div className="form-group">
             <label htmlFor="message">MESSAGE</label>
-            <input
+            <TextArea
               type="text"
               className="form-control"
-              style={{ padding: ".3rem 0", width: "100%", height: "8rem" }}
               id="message"
             />
           </div>

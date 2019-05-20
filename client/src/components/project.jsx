@@ -10,7 +10,7 @@ import {
   Button,
   // CardMenu,
   CardActions,
-  Icon,
+  Icon
   // IconButton,
 } from "react-mdl";
 
@@ -43,7 +43,7 @@ class App extends Component {
               <p>{modaltext}</p>
               <hr />
               <h5>{modalheader}</h5>
-              </Cell>
+            </Cell>
           </Grid>
         </Modal.Body>
         <Modal.Footer>
@@ -190,25 +190,25 @@ class Project extends Component {
             </OverlayTrigger>
           </a>
 
-                <a href={demoURL} target="_blank" rel="noopener noreferrer">
-                  <OverlayTrigger
-                    delay={{ show: 250, hide: 200 }}
-                    placement="top"
-                    overlay={demoTooltip}
-                  >
-                    <Icon
-                      name="info"
-                      style={{
-                        fontSize: "2rem",
-                        color: "#ff0",
-                        position: "absolute",
-                        bottom: ".5rem",
-                        left: "2.5rem"
-                      }}
-                    />
-                    {/* <i style={{fontSize:'2em', color:'white', position: "relative", top: "2.2em", right: '5.3em'}} className="fa fa-flash" aria-hidden="true" /> */}
-                  </OverlayTrigger>
-                </a>
+          <a href={demoURL} target="_blank" rel="noopener noreferrer">
+            <OverlayTrigger
+              delay={{ show: 250, hide: 200 }}
+              placement="top"
+              overlay={demoTooltip}
+            >
+              <Icon
+                name="info"
+                style={{
+                  fontSize: "2rem",
+                  color: "#ff0",
+                  position: "absolute",
+                  bottom: ".5rem",
+                  left: "2.5rem"
+                }}
+              />
+              {/* <i style={{fontSize:'2em', color:'white', position: "relative", top: "2.2em", right: '5.3em'}} className="fa fa-flash" aria-hidden="true" /> */}
+            </OverlayTrigger>
+          </a>
           <OverlayTrigger
             delay={{ show: 250, hide: 200 }}
             placement="top"
@@ -231,7 +231,6 @@ class Project extends Component {
               {modaltitle}
             </h4>
           </OverlayTrigger>
-
         </CardActions>
 
         {/* <CardMenu style={{ color: "#fff" }}>

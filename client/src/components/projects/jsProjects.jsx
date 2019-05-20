@@ -89,7 +89,7 @@ class JSProjects extends Component {
 
           <Project
             modaltitle={"ROCK PAPER SCISSORS"}
-            modalheader={"Technologies"}
+            modalheader={"HTML5 - CSS3 - JavaScript - Bootstrap - Firebase - JQuery"}
             modaltext={
               "Web based multiplayer game with chat functionality. INSTRUCTIONS -- Rock Paper Scissors multiplayer with chat using firebase.This application allows two users with separate sessions to play against one another. The game follows straightforward rock paper scissors rules. Users' stats, choices, and chat messages are tracked and updated in realtime via Firebase."
             }
