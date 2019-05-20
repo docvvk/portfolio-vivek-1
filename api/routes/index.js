@@ -10,9 +10,6 @@ var transport = {
     user: creds.USER, // generated ethereal user
     pass: creds.PASS // generated ethereal password
   }
-  // tls:{
-  //   rejectUnauthorized:false
-  // }
 };
 
 var transporter = nodemailer.createTransport(transport);

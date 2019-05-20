@@ -4,7 +4,7 @@ FROM mhart/alpine-node:8.11.4
 ENV NODE_ENV production
 
 # Set the working directory to /api
-WORKDIR /back-end
+WORKDIR /client
 
 COPY . .
 

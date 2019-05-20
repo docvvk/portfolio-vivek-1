@@ -10,7 +10,6 @@
 /config
 
 # production
-/bin
 /build
 /src/images
 
