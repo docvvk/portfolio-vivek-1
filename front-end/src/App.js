@@ -15,6 +15,7 @@ class App extends Component {
       <div className="demo-big-content">
         <Layout>
           <Navbar
+            // bgColor={'success'}
             expand="lg"
             transparent={false}
             className=""
@@ -79,6 +80,7 @@ class App extends Component {
           </NavbarCollapse>
       </Container> */}
           </Navbar>
+
           {/* <Layout> */}
           {/* <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white', fontFamily: 'Anton', fontSize: '1.7em',}} to="/">My Portfolio</Link>} scroll>
             <Navigation>

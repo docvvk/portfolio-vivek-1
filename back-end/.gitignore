@@ -10,10 +10,12 @@
 /config
 
 # production
+/bin
 /build
 /src/images
 
 # misc
+
 .env
 .DS_Store
 .env.local

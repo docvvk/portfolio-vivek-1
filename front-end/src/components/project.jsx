@@ -8,10 +8,10 @@ import {
   Cell,
   CardTitle,
   Button,
-  CardMenu,
+  // CardMenu,
   CardActions,
   Icon,
-  IconButton,
+  // IconButton,
 } from "react-mdl";
 
 class App extends Component {
@@ -29,7 +29,7 @@ class App extends Component {
         style={{ background: "rgb(0,0,0,0.6)" }}
       >
         <Modal.Header
-          style={{ backgroundColor: "#0F2027", color: "white" }}
+          style={{ backgroundColor: "#002a30", color: "white" }}
           closeButton
         >
           <Modal.Title id="contained-modal-title-vcenter">
@@ -83,8 +83,6 @@ class Project extends Component {
         {...props}
         classID="overlay"
         style={{
-          // position: "absolute",
-          // opacity: "0.5",
           zIndex: 99,
           textAlign: "center",
           backgroundColor: "rgba(0, 0, 0, 0.85)",
@@ -93,8 +91,6 @@ class Project extends Component {
           borderRadius: 3,
           top: "0",
           left: "0",
-          // width: "100%",
-          // height: "100%",
           ...props.style
         }}
       >
@@ -114,8 +110,6 @@ class Project extends Component {
         {...props}
         classID="overlay"
         style={{
-          // position: "absolute",
-          // opacity: "0.5",
           zIndex: 99,
           textAlign: "center",
           backgroundColor: "rgba(0, 0, 0, 0.85)",
@@ -124,8 +118,6 @@ class Project extends Component {
           borderRadius: 3,
           top: "0",
           left: "0",
-          // width: "100%",
-          // height: "100%",
           ...props.style
         }}
       >
@@ -145,8 +137,6 @@ class Project extends Component {
         {...props}
         classID="overlay"
         style={{
-          // position: "absolute",
-          // opacity: "0.5",
           zIndex: 99,
           textAlign: "center",
           backgroundColor: "rgba(0, 0, 0, 0.85)",
@@ -155,8 +145,6 @@ class Project extends Component {
           borderRadius: 3,
           top: "0",
           left: "0",
-          // width: "100%",
-          // height: "100%",
           ...props.style
         }}
       >
@@ -181,15 +169,7 @@ class Project extends Component {
         }}
       >
         <CardTitle expand />
-        <CardActions
-          // style={{
-          //   height: "52px",
-          //   padding: "16px",
-          //   background: "rgba(0,0,0,0.2)",
-          //   fontFamily: "Anton",
-          //   textAlign: "center"
-          // }}
-        >
+        <CardActions>
           <a href={githubURL} target="_blank" rel="noopener noreferrer">
             <OverlayTrigger
               delay={{ show: 250, hide: 200 }}
@@ -199,7 +179,7 @@ class Project extends Component {
               <i
                 style={{
                   fontSize: "2rem",
-                  color: "white",
+                  color: "#f8ffb9",
                   position: "absolute",
                   bottom: "0.5rem",
                   left: "0.5rem"
@@ -210,6 +190,25 @@ class Project extends Component {
             </OverlayTrigger>
           </a>
 
+                <a href={demoURL} target="_blank" rel="noopener noreferrer">
+                  <OverlayTrigger
+                    delay={{ show: 250, hide: 200 }}
+                    placement="top"
+                    overlay={demoTooltip}
+                  >
+                    <Icon
+                      name="info"
+                      style={{
+                        fontSize: "2rem",
+                        color: "#ff0",
+                        position: "absolute",
+                        bottom: ".5rem",
+                        left: "2.5rem"
+                      }}
+                    />
+                    {/* <i style={{fontSize:'2em', color:'white', position: "relative", top: "2.2em", right: '5.3em'}} className="fa fa-flash" aria-hidden="true" /> */}
+                  </OverlayTrigger>
+                </a>
           <OverlayTrigger
             delay={{ show: 250, hide: 200 }}
             placement="top"
@@ -219,13 +218,13 @@ class Project extends Component {
               style={{
                 color: "#fff",
                 fontSize: "1.5rem",
-                textAlign: "center",
                 cursor: "pointer",
                 position: "absolute",
-                bottom: "0",
-                left: "3.5rem",
+                bottom: "0.6rem",
+                left: "5rem",
                 textTransform: "uppercase",
-                fontFamily: "Anton"
+                fontFamily: "monospace",
+                fontWeight: "bold"
               }}
               onClick={() => this.setState({ modalShow: true })}
             >
@@ -233,30 +232,11 @@ class Project extends Component {
             </h4>
           </OverlayTrigger>
 
-          <a href={demoURL} target="_blank" rel="noopener noreferrer">
-            <OverlayTrigger
-              delay={{ show: 250, hide: 200 }}
-              placement="top"
-              overlay={demoTooltip}
-            >
-              <Icon
-                name="info"
-                style={{
-                  fontSize: "2rem",
-                  color: "white",
-                  position: "absolute",
-                  bottom: ".5rem",
-                  right: ".5rem"
-                }}
-              />
-              {/* <i style={{fontSize:'2em', color:'white', position: "relative", top: "2.2em", right: '5.3em'}} className="fa fa-flash" aria-hidden="true" /> */}
-            </OverlayTrigger>
-          </a>
         </CardActions>
 
-        <CardMenu style={{ color: "#fff" }}>
+        {/* <CardMenu style={{ color: "#fff" }}>
           <IconButton name="share" />
-        </CardMenu>
+        </CardMenu> */}
 
         <App
           show={this.state.modalShow}

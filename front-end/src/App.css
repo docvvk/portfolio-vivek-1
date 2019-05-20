@@ -8,7 +8,7 @@
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to left,
-    #2c5364,
+    #002a30,
     #203a43,
     #0f2027
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -17,8 +17,15 @@
 .avatar-img {
   height: 250px;
   width: auto;
-  padding: 8em 1em 1em 2em;
+  padding: 4em 1em 1em 1em;
   border-radius: 80%;
+  transition: all 2s;
+}
+
+.avatar-img:hover {
+  /* transform: scale(2); */
+  background-color: rgba(43, 43, 43, 0.342);
+  box-shadow: 0 5px 15px #04ff10;
 }
 
 .banner-text {
@@ -26,26 +33,17 @@
   width: 75%;
   opacity: 0.6;
   margin: auto;
-  border-radius: 10px;
-}
-
-.banner-text {
-  font-size: 66px;
+  border-radius: 20%;
+  padding: 0.6em;
   font-weight: bold;
   color: white;
+  transition: all 2s ease-in-out;
 }
-
-/* .banner-text hr {
-  border-top: 5px dotted white;
-  width: 50%;
-  margin: auto;
+.banner-text:hover {
+  box-shadow: 0 5px 10px #04ff10;
+  opacity: 1;
+  color: #04ff10;
 }
-
-.banner-text p {
-  color: white;
-  font-size: 20px;
-  padding: 1em;
-} */
 
 .social-links {
   /* display: block; */
@@ -55,18 +53,13 @@
   background-color: rgba(0, 0, 0, 0.63);
   opacity: 0.6;
   border-radius: 10%;
+  transition: all 2s ease;
 }
 
-/* .skills-icons {
-  font-size: 6rem;
-} */
-
-/* .social-links i {
-  color: white;
-  background-color: rgba(240, 248, 255, 0.24);
-  font-size: 5rem;
-  padding: 10px;
-} */
+.social-links:hover {
+  box-shadow: 0 5px 10px #04ff10;
+  opacity: 1;
+}
 .social-links svg {
   font-size: 3em;
   margin: 1rem;
@@ -121,12 +114,16 @@
 /* Resume Page CSS */
 
 .resume-right-col {
-  background: #27221f;
+  background: #0000002f;
   color: aliceblue;
   padding: 2em;
 }
 
 /* Projects Page CSS */
+.mdl-tabs__tab-bar {
+  color: rgb(145, 1, 1);
+}
+
 
 .project-heading {
   /* float: left; */
@@ -154,7 +151,7 @@
   color: snow;
   border: #27221f solid 1px;
   font-family: work sans, helvetica, tahoma, geneva, arial, sans-serif;
-  height: 92%;
+  height: 95.5%;
   padding: 1rem;
 }
 
@@ -205,7 +202,7 @@ input[type="submit"]:hover {
   color: rgb(241, 236, 225);
   /* text-align: left; */
   border: #27221f solid 1px;
-  height: 92%;
+  height: 95.5%;
   font-size: 1.8rem;
   padding: 3rem;
   padding-left: 2rem;
@@ -239,35 +236,109 @@ input[type="submit"]:hover {
 /* } */
 
 .typewriter {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   display: inline-block;
 }
 
 .typewriter-text {
   display: inline-block;
   color: #ccc;
-  background-color: #23271c57;
+  background-color: #00000079;
   font-family: monospace; /* Web-safe typewriter-like font */
   font-size: 1rem;
 
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid rgb(238, 255, 0); /* The typwriter cursor */
+  border-right: 0.15em solid rgb(238, 255, 0); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 5s steps(30, end),
-    blinking-cursor 1s step-end infinite;
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 5s steps(30, end), blinking-cursor 1s step-end infinite;
 }
 
 /* The typing effect */
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 80% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
 }
 /* The typewriter cursor effect */
 @keyframes blinking-cursor {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+/* MEDIA - QUERIES // MISSION - RESPONSIVE */
+
+/* @media all and (max-width: 1690px) { ...}
+@media all and (max-width: 1280px) { ...}
+@media all and (max-width: 980px) { ... }
+@media all and (max-width: 736px) { ... } */
+@media all and (max-width: 480px) {
+  /* LANDING - PAGE */
+
+  .avatar-img {
+    height: 250px;
+    width: auto;
+    padding: 8em 1em 1em 2em;
+    border-radius: 80%;
+    margin-top: -6rem;
+  }
+
+  .banner-text {
+    background-color: black;
+    width: 100%;
+    opacity: 0.6;
+    margin: auto;
+    border-radius: 20%;
+    color: white;
+  }
+  .social-links {
+    width: 100%;
+    margin: -2rem 0 0 0;
+    background-color: rgba(0, 0, 0, 0.63);
+    opacity: 0.6;
+    border-radius: 10%;
+  }
+  .typewriter-text {
+    background-color: rgba(241, 200, 124, 0);
+    font-size: .5rem;
+    overflow: auto; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: 0.1em; /* Adjust as needed */
+  }
+ 
+  /* ABOUT-ME PAGE */
+  .contactUs {
+    background-color: #051318a8;
+  }
+
+  /* PROJECTS PAGE */
+
+  .mdl-tabs__tab-bar {
+    color: rgb(145, 1, 1);
+    background-color: #ff0000
+  }
+
+  Card {
+    /* display: flex; */
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  CardActions a {
+    display: inline;
+  }
+  CardActions a OverlayTrigger i {
+    font-size: 1rem;
+
+  }
 }

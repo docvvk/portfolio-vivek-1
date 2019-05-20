@@ -36,7 +36,7 @@ class ReactProjects  extends Component {
         <Slider {...settings}>
           <Project
             modaltitle={"REACT MIND GAME"}
-            modalheader={'React card matching game deployed on Heroku!'}
+            modalheader={'React - Fbemitter - Lodash - Heroku'}
             modaltext={
               "TECHNOLOGIES USED -- ReactJS, Heroku | DEPENDENCIES -- classnames, fbemitter, lodash, react-dom"
             }

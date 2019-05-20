@@ -9,6 +9,7 @@ class Maps extends Component {
   render() {
     return (
       <Location
+        className={"maps"}
         apiKey={apiKey}
         lat={43.884}
         lng={-78.9}
